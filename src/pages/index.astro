@@ -1,0 +1,70 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+import Counter from '../components/Counter.astro'
+import ContentMedia from '../components/ContentMedia.astro'
+---
+
+<DefaultLayout title="Home">
+  <Hero />
+  <section class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Skills</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="ion:logo-css3" title="HTML/CSS">
+          Ability to create visually appealing, responsive web pages that provide clean, well-structured code to enhance the user experience.
+        </Feature>
+        <Feature icon="ion:logo-javascript" title="Javascript">
+          Proficient in developing interactive and dynamic web applications. Capable of leveraging modern frameworks and libraries to enhance functionality and user engagement.
+        </Feature>
+        <Feature icon="ion:logo-nodejs" title="Node.js">
+          Skilled in building scalable and efficient backend solutions. Skilled in developing server-side applications and RESTful APIs to power modern web and mobile applications.
+        </Feature>
+        <Feature icon="ion:rocket" title="Astro">
+          Familiar with Astro for streamlined web development that combines a variety of technologies in a seamless way. Able to create efficient and modular web applications with ease.
+        </Feature>
+        <Feature icon="ion:logo-react" title="React">
+          Experienced at building dynamic and interactive user interfaces. Proficient at leveraging React's component-based architecture to create scalable and efficient web applications.
+        </Feature>
+        <Feature icon="mdi:language-php" title="PHP">
+          Dynamic web applications and robust backend solutions. Skilled in database integration and server-side scripting for efficient data processing. Document manipulation lib XP.
+        </Feature>
+        <Feature icon="mdi:language-cpp" title="C++">
+          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
+        </Feature>
+        <Feature icon="ion:logo-python" title="Python">
+          The theme offers some very handy utilities to help you build your website faster.
+        </Feature>
+        <Feature icon="mdi:picture-in-picture-bottom-right" title="Graphic Design">
+          Skilled in Figma prototyping, Photoshop, and video editing, with expertise in multimedia software. Able to create visually striking designs and captivating multimedia content.
+        </Feature>
+      </div>
+    </div>
+  </section>
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <h2>Projects & Student Groups</h2>
+    <p class="text-2xl">
+      I'm part of <a target="_blank" href="https://www.instagram.com/ramaieeeun/?hl=es">IEEE UN</a>, in chapters <a target="_blank" href="https://www.instagram.com/computersocietyun/?hl=es">Computer Society</a>,
+      <a target="_blank" href="https://www.instagram.com/ceimtun/?hl=es">RAS</a> and <a target="_blank" href="https://www.instagram.com/embs_un/?hl=es">EMB</a>. Participating in projects working with
+      emphasis in Convolutional Networks, automation, control, robotics, software development and more.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <h2>Studies & Experiences</h2>
+    <p class="text-2xl">
+      Studyng Electronic Enginnering in National University of Colombia, Full Stack certification by the District University of Bogota, MeIA 2023, Organizer of Computer Society UN's
+      <a href="https://www.instagram.com/p/CyLd507unEC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">CODE FEST</a> programming tournament event IOT Technician and C++ programmer from SENA.
+    </p>
+  </ContentMedia>
+  <section class="mb-32 mt-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Participation in</h2>
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter count="5" title="Projects" sub="About Software Development" />
+        <Counter count="+4" title="IT Events" sub="As Assistant Organizer" />
+        <Counter count="+2" title="Years" sub="Being Part of Student Groups about IT & Engineering" />
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
